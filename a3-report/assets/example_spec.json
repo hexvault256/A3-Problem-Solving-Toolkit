@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "Improving Ergonomic Problems in my room",
+    "title_prefix": "Example:",
+    "header_left": ["American University of the Middle East", "IE386 (Work Analysis & Design I)"],
+    "header_right": ["IE386 (Your Section)", "ID, Name"],
+    "language": "en"
+  },
+  "titles": {"deep_analysis": "Ergonomic Analysis", "countermeasures": "Proposed Solutions", "five_whys": "Five-Whys Analysis (Basic IE Techniques)"},
+  "background": [
+    "AUM started online classes from March, and I spend most of the time in my study room.",
+    "Sitting for more than 12 hours makes me very exhausted, and I need to identify and improve ergonomic problems.",
+    "Coronavirus pandemic may continue next 1-2 years (source)",
+    "I want to resolve my problems in my study room."
+  ],
+  "current_problems": {
+    "style": "roman",
+    "items": [
+      "My desk is always messy.",
+      "I sit with bad posture for long hours.",
+      "I have a neck pain.",
+      "I get tired after sitting 2 hours.",
+      "Sometimes, iPhone, keys, wallet disappears."
+    ]
+  },
+  "goals": [
+    "Resolve the above problems",
+    "Make a feasible implementation / deployment plan"
+  ],
+  "five_whys": {
+    "trees": [
+      {"problem": "Items lost", "steps": [
+        "Because it takes time to find",
+        "Desk is messy",
+        "Everything on desk",
+        {"text": "No home-position for items", "dashed": true, "mark": "star"},
+        {"text": "No containers for small items", "dashed": true}
+      ]},
+      {"problem": "Neck pain", "steps": [
+        "Bend my back (kyphosis)",
+        "Because I want to see PC screen clearly",
+        "Text size is small",
+        {"text": "I did not change the PC settings", "dashed": true, "mark": "star"}
+      ]}
+    ],
+    "notes": [
+      "We can evaluate the progress by measuring time to find iPhone, keys, wallet, and staples.",
+      "Evaluate the progress by a subjective feeling of neck-pain"
+    ],
+    "legend": true
+  },
+  "deep_analysis": {
+    "title": "Ergonomic Analysis",
+    "blocks": [
+      {"heading": "A. Used Ergonomics checklist (“Search”) for Item lost and messy desk problems",
+       "point_color": "red",
+       "points": [
+         "Perhaps labels or color could be utilized?",
+         "Will better layout of the workstation eliminate searching?",
+         "Is proper lighting being used?",
+         "Can tools and parts be prepositioned?"
+       ]},
+      {"heading": "B. Used the Ergonomics checklist (“General posture evaluation, computer workstation) for the neck-pain, tiresome, and bad posture problems.",
+       "point_color": "red",
+       "points": [
+         "Are the joints maintained in a neutral position? (most are straight, elbow is at 90)",
+         "Has the chair been adjusted first, then keyboard and mouse, finally the monitor?",
+         "Is the monitor positioned 16 to 30 inches (roughly arm’s length) from the eyes?",
+         "Is the document holder utilized for data transfer from papers?",
+         "Are static postures avoided? i.e., are there changes in posture?"
+       ]}
+    ]
+  },
+  "countermeasures": {
+    "title": "Proposed Solutions",
+    "blocks": [
+      {"heading": "Solutions for the search/messy (I, V) problems", "style": "alpha-lower", "point_color": "blue",
+       "points": [
+         "Change the layout of the workstation",
+         "Buy a light-stand, small containers, and bookshelf",
+         "Make preposition (home-position) for tools and put them back after using them.",
+         "Make a routine time for organizing and cleaning every day for 5 minutes"
+       ]},
+      {"heading": "Solutions for the bad posture, neck pain and tiresome (II, III, and IV) problems.", "style": "alpha-upper", "point_color": "blue",
+       "points": [
+         "Adjust the chair, then keyboard, mouse, and finally monitor so that joints maintain in a neutral position.",
+         "Position the monitor 16 30 inches (roughly arm’s length) from my eyes.",
+         "Buy a document holder",
+         "Avoid static postures, and make time for stretching and back-muscle exercising",
+         "Buy a 34-inch wide-monitor",
+         "Conduct stretch and exercise the back muscle"
+       ]}
+    ]
+  },
+  "cost_analysis": {
+    "bullets": [
+      "It is assumed to use items for 10 years to 30 years (my children can also use them)",
+      "Hours in a year = 4 hours/day x 7 days/week x 50 weeks/year = 1400 hours/year",
+      "The total cost per hour was 0.002KD/h, and it is acceptable for me.",
+      "If I spend one more year to graduate, it costs more than 418KD, this is acceptable."
+    ],
+    "table": {
+      "headers": ["Items", "Price(KD)", "Years", "Hours", "KD/Hour"],
+      "rows": [
+        ["Light stand", "10", "30", "1260000", "0.0000079"],
+        ["Containers(5)", "5", "30", "1260000", "0.0000040"],
+        ["Document holder", "3", "30", "1260000", "0.0000024"],
+        ["Bookshelf", "100", "30", "1260000", "0.0000794"],
+        ["Wide-Monitor", "300", "10", "140000", "0.0021429"],
+        ["Total", "418", "", "Total", "0.0022365"]
+      ],
+      "highlight_last": true,
+      "row_h": 0.19
+    }
+  },
+  "timeline": {
+    "columns": ["July", "August", "September", "October", "November", "December"],
+    "row": ["a, c, d, A, B,D", "b, F", "", "C", "", "E"],
+    "row_h": 0.3
+  }
+}
